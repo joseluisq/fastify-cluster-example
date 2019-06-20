@@ -1,0 +1,20 @@
+{
+  "name": "fastify-cluster-example",
+  "version": "0.0.0",
+  "main": "src/index.ts",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "ts-node src/index.ts"
+  },
+  "dependencies": {
+    "fastify": "^2.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "10",
+    "ts-node": "^8.3.0",
+    "tslint": "^5.17.0",
+    "tslint-config-standard-plus": "^2.2.0",
+    "typescript": "^3.5.2"
+  }
+}
