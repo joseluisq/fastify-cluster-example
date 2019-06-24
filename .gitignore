@@ -7,6 +7,8 @@ dist
 /*.map
 /*.d.ts
 *cache
+*.bin
+*.html
 
 !/*.config.js
 !/*.conf.js
