@@ -1,22 +1,18 @@
-import { Application } from './application'
-import { setupRoutes } from './application.routes'
+import { Application } from "./application"
+import { setupRoutes } from "./application.routes"
 
-/** Creates an Appication instance */
-export async function applicationFactory () {
-  // Application instance
-  const app = new Application(
-    {
-      http2: false
-    }, {
-      port: 7300,
-      host: '127.0.0.1'
-    }
-  )
+/** Define a factory function that will create an instance of `Application` */
+export type ApplicationFactory = (worker: number) => Promise<void>
 
-  // Router definitions
-  setupRoutes(app.$server)
+/** Create an new instance of `Appication` */
+export async function applicationFactory (worker: number) {
+    // Application instance
+    const app = new Application({ port: 7300 })
 
-  const URL = await app.listen()
+    // Router definitions
+    setupRoutes(app.$server)
 
-  console.log('🚀 Server ready at %s', URL)
+    const url = await app.listen()
+
+    console.log("🚀 Server ready at %s on worker %o", url, worker)
 }

@@ -7,22 +7,22 @@
 ```sh
 ~> yarn
 ~> yarn start
-yarn run v1.16.0
+yarn run v1.22.4
 $ ts-node src/index.ts
 Total Number of Cores: 4
-Master 40774 is running
-Worker 40775 is listening
-Worker 40776 is listening
-Worker 40777 is listening
-Worker 40778 is listening
-Worker 40778 started
-Worker 40775 started
-Worker 40776 started
-🚀 Server ready at http://127.0.0.1:7300
-Worker 40987 started
-🚀 Server ready at http://127.0.0.1:7300
-🚀 Server ready at http://127.0.0.1:7300
-🚀 Server ready at http://127.0.0.1:7300
+Master 14784 is running
+Worker 14785 is listening
+Worker 14786 is listening
+Worker 14787 is listening
+Worker 14788 is listening
+Worker 14787 started
+Worker 14785 started
+🚀 Server ready at http://[::]:7300 on worker 2
+Worker 14788 started
+🚀 Server ready at http://[::]:7300 on worker 0
+🚀 Server ready at http://[::]:7300 on worker 3
+Worker 14786 started
+🚀 Server ready at http://[::]:7300 on worker 1
 ```
 
 ## Testing
