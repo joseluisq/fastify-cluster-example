@@ -10,7 +10,7 @@ export class ClusterApplication {
 
   /** Run an application in multi-threaded mode */
     run () {
-        if (cluster.isMaster) {
+        if (cluster.isPrimary) {
             this.master()
         } else {
             this.worker()
